@@ -1,0 +1,58 @@
+@mixin visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+@mixin visually-hidden-reset {
+  position: static;
+  width: auto;
+  height: auto;
+  margin: 0;
+  clip-path: none;
+  clip: auto;
+  overflow: visible;
+  white-space: normal;
+}
+
+
+@mixin fluid-text($max: 48, $min: 16) {
+  font-size: clamp(#{$min}px, #{$max / 1920 * 100}vw, #{$max}px);
+}
+
+@mixin reset-link {
+  color: inherit;
+
+  &,
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+@mixin ellipse($size, $color, $blur: 334px) {
+  width: $size;
+  aspect-ratio: 1;
+  background: $color;
+  border-radius: 50%;
+  filter: blur($blur);
+  pointer-events: none;
+  position: absolute;
+}
+
+@mixin circle($size, $color) {
+  width: $size;
+  height: $size;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  background: $color;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}

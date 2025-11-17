@@ -1,0 +1,83 @@
+<!doctype html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Yamaguchi</title>
+    <link rel="stylesheet" href="./styles/styles.css">
+</head>
+<body>
+    <main class="content">
+        <aside class="sidebar" aria-label="Характеристики фена">
+            <svg class="sidebar__decor" width="564" height="706" aria-hidden="true">
+                <use href="./images/icons/decor_circle.svg"></use>
+            </svg>
+            <ul class="sidebar__list">
+                <li class="sidebar__item sidebar__item--active" data-slide="1">
+                    <span class="sidebar__circle">
+                        <svg class="sidebar__icon" aria-hidden="true" width="56" height="43">
+                            <use href="./images/icons/icons.svg#fan"></use>
+                        </svg>
+                    </span>
+                    <span class="sidebar__label">Фен-стайлер<br>2 в 1</span>
+                </li>
+                <li class="sidebar__item" data-slide="2">
+                    <span class="sidebar__circle">
+                        <svg class="sidebar__icon" aria-hidden="true" width="46" height="40">
+                            <use href="./images/icons/icons.svg#stylus"></use>
+                        </svg>
+                    </span>
+                    <span class="sidebar__label">Суперлёгкий</span>
+                </li>
+                <li class="sidebar__item" data-slide="3">
+                    <span class="sidebar__circle">
+                        <svg class="sidebar__icon" aria-hidden="true" width="39" height="42">
+                            <use href="./images/icons/icons.svg#bag"></use>
+                        </svg>
+                    </span>
+                    <span class="sidebar__label">Суперкомпактный</span>
+                </li>
+                <li class="sidebar__item" data-slide="4">
+                    <span class="sidebar__circle">
+                        <svg class="sidebar__icon" aria-hidden="true" width="57" height="57">
+                            <use href="./images/icons/icons.svg#blades"></use>
+                        </svg>
+                    </span>
+                    <span class="sidebar__label">Инновационный<br>Японский мотор</span>
+                </li>
+                <li class="sidebar__item" data-slide="5">
+                    <span class="sidebar__circle">
+                        <svg class="sidebar__icon" aria-hidden="true" width="40" height="41">
+                            <use href="./images/icons/icons.svg#ions"></use>
+                        </svg>
+                    </span>
+                    <span class="sidebar__label">Эффект салонного<br>ламинирования</span>
+                </li>
+
+            </ul>
+        </aside>
+
+        <div class="section" aria-label="Слайды о фене">
+            <div class="section__page" data-slide="1">
+                <article class="section__slide">
+                </article>
+            </div>
+            <div class="section__page" data-slide="2">
+                <article class="section__slide" style="background-color: red;"></article>
+            </div>
+            <div class="section__page" data-slide="3">
+                <article class="section__slide" style="background-color: blue;"></article>
+            </div>
+            <div class="section__page" data-slide="4">
+                <article class="section__slide" style="background-color: green;"></article>
+            </div>
+            <div class="section__page" data-slide="5">
+                <article class="section__slide" style="background-color: violet;"></article>
+            </div>
+        </div>
+    </main>
+<script src="./script.js"></script>
+</body>
+</html>

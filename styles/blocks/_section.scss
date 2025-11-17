@@ -1,0 +1,22 @@
+.section {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  overflow-y: auto;
+  scroll-snap-type: y mandatory;
+
+  &__page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    scroll-snap-align: start;
+  }
+
+  &__slide {
+    width: 1240px;
+    height: 800px;
+    border-radius: 70px;
+    background-color: var(--color-gray-front);
+  }
+}
