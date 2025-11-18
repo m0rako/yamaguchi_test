@@ -1,0 +1,48 @@
+.slide-stylus {
+  position: relative;
+
+  &__img {
+    position: absolute;
+    left: 128px;
+    user-select: none;
+    -webkit-user-drag: none;
+  }
+
+  &__star {
+    @include star-base;
+    left: 43px;
+    top: 35px;
+    --star-color: var(--color-text-accent-dark);
+
+    p {
+      transform: rotate(-11deg);
+    }
+  }
+
+  &__badge {
+    display: flex;
+    justify-content: center;
+    margin-top: 39px;
+  }
+
+  &__text {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    width: 344px;
+    top: 272px;
+    left: 797px;
+    color: var(--color-text-accent-light);
+    text-align: center;
+
+    h2 {
+      @include slide-text-title;
+    }
+
+    p {
+      @include slide-text-paragraph;
+      margin-top: 34px;
+      margin-bottom: 0;
+    }
+  }
+}

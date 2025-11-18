@@ -1,0 +1,17 @@
+.star {
+  @include star-base;
+  transform: rotate(-11deg);
+
+  &--white {
+    --star-color: #FFFFFF;
+  }
+
+  &--gray {
+    --star-color: var(--color-ellipse-gray);
+  }
+
+  &--dark {
+    --star-color: var(--color-text-accent-dark);
+  }
+}
+

@@ -1,0 +1,69 @@
+.bg {
+  position: absolute;
+  inset: 0;
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+
+  &__video {
+    position: absolute;
+    inset: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
+
+  &__ellipse--peach {
+    @include ellipse(460px, var(--color-ellipse-peach));
+    top: 52px;
+    left: 178px;
+
+    &--slide2 {
+      @include ellipse(505px, var(--color-ellipse-peach));
+      top: 16px;
+      left: 65px;
+    }
+  }
+
+  &__ellipse--white {
+    @include ellipse(450px, var(--color-ellipse-white));
+    bottom: 486px;
+    left: 408px;
+
+    &--slide4 {
+      @include ellipse(672px, var(--color-ellipse-white));
+      bottom: 287px;
+      left: 647px;
+    }
+
+    &--slide4-2 {
+      @include ellipse(672px, var(--color-ellipse-white));
+      bottom: 239px;
+      left: 647px;
+    }
+
+    &--slide5 {
+      @include ellipse(672px, var(--color-ellipse-white));
+      top: 343px;
+      left: 682px;
+    }
+  }
+
+  &__ellipse--orange {
+    @include ellipse(420px, var(--color-ellipse-orange));
+    top: 286px;
+    left: 671px;
+
+    &--slide3 {
+      @include ellipse(693px, var(--color-ellipse-orange));
+      bottom: 309px;
+      left: 199px;
+    }
+  }
+
+  &__ellipse--gray {
+    @include ellipse(514px, var(--color-ellipse-gray));
+    bottom: 324px;
+    left: 769px;
+  }
+}
